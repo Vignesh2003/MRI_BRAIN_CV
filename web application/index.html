@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain MRI Metastasis Segmentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Brain MRI Metastasis Segmentation</h1>
+    </header>
+
+    <section class="upload-section">
+        <h2>Upload MRI Image (.tif)</h2>
+        <input type="file" id="fileInput" accept=".tif" />
+        <div id="imagePreviewContainer">
+            <h3>Preview of MRI Image:</h3>
+            <img id="imagePreview" src="" alt="MRI Image Preview" style="display: none;" />
+        </div>
+        <button id="processButton">Process Image</button>
+    </section>
+
+    <section class="result-section" style="display:none;">
+        <h2>Segmentation Result</h2>
+        <div id="maskImageContainer">
+            <h3>Predicted Mask:</h3>
+            <img id="maskImage" src="" alt="Predicted Mask" />
+        </div>
+        <button id="downloadButton">Download Mask</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
